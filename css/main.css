@@ -109,7 +109,7 @@ div {
 
 #skrollr-section-3 {
 	background: #000;
-	height: 392px;
+	height: auto;
 }
 
 #welcome {
@@ -155,7 +155,7 @@ div.text-black {
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	top: -60%;
+	top: -30%;
 	left: 30%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -163,12 +163,12 @@ div.text-black {
 }
 
 #jan {
-	padding-top: 27%;
+	padding-top: 20%;
 	text-align: center;
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	top: -40%;
+	bottom: 0%;
 	left: 30%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -182,7 +182,7 @@ div.text-black {
 	font-weight: 300;
 	width: 30%;
 	z-index: 101;
-	margin-top: 1150px;
+	margin-top: 1400px;
 	margin-left: 150px;
 	text-align: left;
 }
@@ -194,7 +194,7 @@ div.text-black {
 	font-weight: 300;
 	width: 30%;
 	z-index: 101;
-	margin-top: 1150px;
+	margin-top: 1400px;
 	margin-left: 150px;
 	text-align: right;
 	padding-left: 5%;
