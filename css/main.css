@@ -1,218 +1,110 @@
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue.woff2') format('woff2'),
-        url('../fonts/HelveticaNeue.woff') format('woff'),
-        url('../fonts/HelveticaNeue.ttf') format('truetype'),
-        url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue-Light.woff2') format('woff2'),
-        url('../fonts/HelveticaNeue-Light.woff') format('woff'),
-        url('../fonts/HelveticaNeue-Light.ttf') format('truetype'),
-        url('../fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue-Medium.woff2') format('woff2'),
-        url('../fonts/HelveticaNeue-Medium.woff') format('woff'),
-        url('../fonts/HelveticaNeue-Medium.ttf') format('truetype'),
-        url('../fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue-UltraLight.woff2') format('woff2'),
-        url('../fonts/HelveticaNeue-UltraLight.woff') format('woff'),
-        url('../fonts/HelveticaNeue-UltraLight.ttf') format('truetype'),
-        url('../fonts/HelveticaNeue-UltraLight.svg#HelveticaNeue-UltraLight') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
-        url('../fonts/HelveticaNeue-Bold.woff') format('woff'),
-        url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'),
-        url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inconsolata';
-    src: url('../fonts/Inconsolata-Regular.woff2') format('woff2'),
-        url('../fonts/Inconsolata-Regular.woff') format('woff'),
-        url('../fonts/Inconsolata-Regular.ttf') format('truetype'),
-        url('../fonts/Inconsolata-Regular.svg#Inconsolata-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inconsolata';
-    src: url('../fonts/Inconsolata-Bold.woff2') format('woff2'),
-        url('../fonts/Inconsolata-Bold.woff') format('woff'),
-        url('../fonts/Inconsolata-Bold.ttf') format('truetype'),
-        url('../fonts/Inconsolata-Bold.svg#Inconsolata-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-body {
-	border: 0;
-	padding: 0;
+html, body, div {
 	margin: 0;
+	padding: 0;
 	overflow-x: hidden;
 }
 
-div {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	outline: none;
-	width: 100%;
-	display: inline-block;
-	vertical-align: top;
+.intro {
+	position: relative;
+	width: 100vw;
+	height: 50vh;
+	background: white;
 }
 
-#skrollr-section-1 {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	outline: none;
+.diving {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: white;
+}
+
+img.dive1 {
+	left: calc(50vw - 98px);
 	display: block;
-	font: 0;
-	line-height: 0;
+	vertical-align: middle;
 }
 
-#skrollr-section-2 {
-	background: #000;
-	height: 900px;
+img.dive2 {
+	position: absolute;
+	left: calc(50vw - 98px);
+	bottom: 0;
+	display: block;
+	vertical-align: middle;
 }
 
-#skrollr-section-3 {
-	background: #000;
+.brain {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: white;
+}
+
+img.brain {
+	position: absolute;
 	height: auto;
+	width: 100vw;
+	bottom: 0;
+	display: block;
+	vertical-align: middle;
 }
 
-#welcome {
-	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-	color: black;
-	font-size: 2.2em;
-	font-weight: 400;
-	width: 100%;
-	position: fixed;
-	z-index: 101;
-	margin-top: 170px;
-	text-align: center;
-}
-
-div.text {
+.brain-text {
+	position: relative;
+	width: 100vw;
+	height: 75vh;
+	background: black;
 	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
 	color: white;
 	font-size: 2.2em;
 	font-weight: 200;
-	width: 50%;
 }
 
-div.text-right {
+p.text1 {
+	width: 60vw;
+}
+
+img.diver {
+	position: absolute;
+	display: block;
+}
+
+.diver-black {
+	position: relative;
+	width: 100vw;
+	height: 50vh;
+	background: black;
 	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
 	color: white;
 	font-size: 2.2em;
 	font-weight: 200;
-	width: 50%;
-	padding-left: 0%;
 }
 
-div.text-black {
-	font-family: Inconsolata;
+p.text2 {
+	width: 65vw;
+}
+
+img.monster {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	vertical-align: middle;
+}
+
+.transmission {
+	position: relative;
+	width: 100vw;
+	height: 175vh;
+	background: white;
+	font-family: Inconsolata, sans-serif;
 	color: black;
-	font-size: 1.5em;
-	width: 90%;
-	padding-top:50%;
+	font-size: 1.2em;
+	padding-top: 30vh;
+	padding-left: 10vh;
 }
 
-#astronaut {
-	padding-top:25%;
-	text-align: center;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: -30%;
-	left: 30%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-#jan {
-	padding-top: 20%;
-	text-align: center;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	bottom: 0%;
-	left: 30%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-#end {
-	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-	color: black;
-	font-size: 2.2em;
-	font-weight: 300;
-	width: 30%;
-	z-index: 101;
-	margin-top: 1400px;
-	margin-left: 150px;
-	text-align: left;
-}
-
-#end-right {
-	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-	color: black;
-	font-size: 2.2em;
-	font-weight: 300;
-	width: 30%;
-	z-index: 101;
-	margin-top: 1400px;
-	margin-left: 150px;
-	text-align: right;
-	padding-left: 5%;
-}
-
-#end-credit {
-	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-	color: black;
-	font-size: 1em;
-	font-weight: 300;
-	width: 100%;
-	z-index: 101;
-	position: fixed;
-	text-align: right;
-	right: 15%;
-	bottom: 5%;
-}
-
-b.strong {
-	font-weight: 700;
+img.astronaut {
+	position: absolute;
+	right: 15vw;
+	bottom: 100vh;
 }
