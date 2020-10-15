@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Sample Project</title>
+		<meta charset="UTF-8"> 
+        <title>Happy birthday Jan!</title>
 		<link rel="stylesheet" href="css/main.css">
+		<!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+        <script data-main="scripts/main" src="scripts/require.js"></script>
     </head>
     <body>
-		<div class="intro"><!-- data-0="opacity:1;transform:rotate(0deg);transform-origin:50% 50%;" data-top-bottom="opacity:0;transform:rotate(-90deg);" -->
-			Hello
+		<div class="intro">
+		<strong>[INSTRUCTIONS:]</strong> Pump up the volume. Click the play button. And start scrolling down!
+			<div class="buttons"><!-- data-0="opacity:1;transform:rotate(0deg);transform-origin:50% 50%;" data-top-bottom="opacity:0;transform:rotate(-90deg);" -->
+				<button class="play" title="Play Audio"><span>Play Audio</span></button>
+				<button class="mute" title="Mute Audio"><span>Mute</span></button>
+				<button class="unmute" title="Unmute Audio"><span>Unmute</span></button>
+			</div>
 		</div>
 		<div class="diving">
 			<img class="dive1" src="dive1.png" data-0p="position: fixed; transform: scale(0.5) rotate(0deg); transform-origin: 50% 50%;" data-75p="position: relative; transform:scale(1) rotate(360deg);">
@@ -80,9 +89,24 @@
 			<img class="astronaut" src="astronaut.png" data-bottom-top="transform:scale(1) rotate(-90deg);" data-top-bottom="transform:scale(1) rotate(30deg);">
 		</div>
 		
-		<script type="text/javascript" src="scripts/skrollr.js"></script>
-		<script type="text/javascript">
-		var s = skrollr.init();
-		</script>
+		<div class="paris">
+			<img class="paris-0" src="taxi.png" data-bottom-top="left:0vw;" data-top-bottom="left:100vw;">
+			<img class="paris-1" src="paris-1.png">
+			<img class="paris-2" src="paris-2.png" data-450p="bottom[sqrt]: 0vh; margin-bottom[sqrt]: -80%;" data-630p="bottom[sqrt]: 18vh; margin-bottom[sqrt]: 0;">
+			<img class="paris-3" src="paris-3.png" data-400p="bottom[cubic]: 0vh; margin-bottom[cubic]: -30%;" data-630p="bottom[cubic]: 30vh; margin-bottom[cubic]: 0;">
+			<img class="paris-4" src="paris-4.png" data-bottom-top="top[sqrt]: 150vh;" data-top-bottom="top[sqrt]: 0vh;">
+			<img class="paris-5" src="paris-5.png" data-550p="top: 100vh;" data-650p="top: 0vh;">
+		</div>
+		
+		<div class="paris-bottom"></div>
+		
+		<div class="end">
+			<img class="jan2" src="jan2.png" data-bottom-top="right:0vw; transform:scale(0)" data-bottom-bottom="right:10vw; transform:scale(1);">
+			<p class="text3">
+				I hope you forever stay happy, healthy and blessed, and achieve everything you set foot for. I hope that we continue sharing the love for food, Jan Gehl and Taylor Swift in the years to come.    
+				And I hope, someday we'll be able to roam the streets of Paris. Party hard, just like you work hard. <b class="strong">Happpppy birthdayyyy</b> to youuuuuuuu.<br/><br/> P.S. We need to watch more movies together, please get free really soon :P
+			</p>
+			<p class="sign">From, Ansh x</p>
+		</div>
     </body>
 </html>
